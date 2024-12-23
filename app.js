@@ -8,7 +8,7 @@ const port = 3000;
 // Enable CORS for all requests
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public')); // Serve static files like HTML, CSS, JS
+app.use(express.static('/')); // Serve static files like HTML, CSS, JS
 
 // API for downloading MP3
 app.get('/download/mp3', async (req, res) => {
