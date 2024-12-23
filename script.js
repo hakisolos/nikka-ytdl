@@ -16,7 +16,7 @@ document.getElementById('downloadBtn').addEventListener('click', async () => {
     message.textContent = 'Fetching video details...';
 
     try {
-        const response = await axios.get(`http://localhost:3000/download/${format}?url=${encodeURIComponent(url)}`);
+        const response = await axios.get(`https://nikka-ytdl.onrender.com/download/${format}?url=${encodeURIComponent(url)}`);
 
         const data = response.data;
 
