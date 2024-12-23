@@ -1,4 +1,4 @@
-// app.js
+/* app.js
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -44,3 +44,4 @@ app.get('/download/mp4', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
+*/
