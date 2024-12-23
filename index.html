@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="container">
+      <header>
+        <h1>Youtube Downloader</h1>
+      </header>
+
+      <section class="download-section">
+        <input type="text" id="url" placeholder="Enter YouTube URL">
+        <div class="format-selection">
+          <label>
+            <input type="radio" name="format" value="mp3" checked> MP3
+          </label>
+          <label>
+            <input type="radio" name="format" value="mp4"> MP4
+          </label>
+        </div>
+        <button id="downloadBtn">Download</button>
+        <p id="message"></p>
+      </section>
+
+      <section id="videoDetails">
+        <!-- Video details will be displayed here -->
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>
